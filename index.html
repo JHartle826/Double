@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delicious Recipes</title>
+    <style>
+        body { background-color: peachpuff; font-family: Arial; }
+        .header { background-color: darksalmon; padding: 20px; text-align: center; }
+        .header button { background-color: coral; color: white; margin: 10px; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+        .main { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px; }
+        .recipe { margin: 10px; padding: 20px; background-color: lightyellow; border-radius: 8px; width: 30%; }
+        .recipe img { width: 100%; border-radius: 8px; }
+        .footer { background-color: darksalmon; color: white; text-align: center; padding: 10px; position: fixed; left: 0; bottom: 0; width: 100%; }
+        form { background-color: lightgrey; padding: 20px; margin-top: 20px; }
+        input, textarea { margin: 10px 0; width: 100%; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button onclick="navigateHome()">Home</button>
+    <button onclick="navigateProducts()">Products</button>
+</div>
+
+<div class="main">
+    <div class="recipe">
+        <img src="recipe-image-url.jpg" alt="Recipe Image" />
+        <h2>Delicious Pizza</h2>
+        <p>This is a simple yet delicious pizza recipe that you'll love to make over and over.</p>
+    </div>
+    <div class="recipe">
+        <img src="another-recipe-image-url.jpg" alt="Another Recipe Image" />
+        <h2>Chocolate Brownie</h2>
+        <p>A gooey, soft chocolate brownie recipe perfect for chocolate lovers.</p>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2023 Delicious Recipes. All rights reserved.
+</div>
+
+<form>
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+</form>
+
+<script>
+    function navigateHome() {
+        window.location.href = '#';
+    }
+    function navigateProducts() {
+        window.location.href = '#';
+    }
+</script>
+
+</body>
+</html>
